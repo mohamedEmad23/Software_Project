@@ -1,16 +1,13 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import RegisterPage from './components/RegisterPage/RegisterPage';
 
 function App() {
-  const title = 'Welcome to the new Blog'
-  return (
-    <div className="App">
-     <div className="content">
-        <h1>{ title }</h1>
-        
-     </div>
-    </div>
-  );
+    return (
+        <div className="App">
+            <RegisterPage />
+        </div>
+    );
 }
 
 export default App;
