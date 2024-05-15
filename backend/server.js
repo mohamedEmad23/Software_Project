@@ -14,8 +14,10 @@ const orderRoute = require('./routes/orderRoute');
 const app = express();
 
 //New code
+app.options('*', cors());
+
 app.use(cors({
-    origin: 'https://localhost:3000', // replace with the origin of your frontend
+    origin: 'http://localhost:3000', // replace with the origin of your frontend
     credentials: true,
 }));
 
@@ -32,18 +34,18 @@ app.use(authenticationMiddleware)
 app.use("/api/v1", adminRoute);
 app.use("/api/v1", orderRoute);
 
- const options = {
-     key: fs.readFileSync('C:\\Users\\M-EMAD\\WebstormProjects\\Recent_Test_Sample\\Frontend\\frontend\\key.pem'),
-     cert: fs.readFileSync('C:\\Users\\M-EMAD\\WebstormProjects\\Recent_Test_Sample\\Frontend\\frontend\\cert.pem')
- };
+ // const options = {
+ //     key: fs.readFileSync('C:\\Users\\M-EMAD\\WebstormProjects\\Recent_Test_Sample\\Frontend\\frontend\\key.pem'),
+ //     cert: fs.readFileSync('C:\\Users\\M-EMAD\\WebstormProjects\\Recent_Test_Sample\\Frontend\\frontend\\cert.pem')
+ // };
 
- https.createServer(options, app).listen(5000, () => {
-     console.log('HTTPS server running on port 5000');
- });
-
-
- // app.listen(port, () => {
- //     console.log(`Server is running on port ${port}`);
+ // https.createServer(options, app).listen(5000, () => {
+ //     console.log('HTTPS server running on port 5000');
  // });
+
+
+  app.listen(port, () => {
+      console.log(`Server is running on port ${port}`);
+  });
 
 
