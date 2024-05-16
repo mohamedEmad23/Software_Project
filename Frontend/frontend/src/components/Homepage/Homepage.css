@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'porsche_font';
-    src: url('Frontend/frontend/src/fonts/911porschav3.ttf') format('truetype');
+    src: url('../../fonts/911porschav3.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'porsche_font2';
-    src: url('Frontend/frontend/src/fonts/PorscheNext-Regular.otf') format('truetype');
+    src: url('../../fonts/PorscheNext-Regular.otf') format('truetype');
 }
 
 body {
