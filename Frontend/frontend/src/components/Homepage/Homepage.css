@@ -56,3 +56,8 @@ video {
     color: white;
     font-family: 'porsche_font', fallback-fonts, serif;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}

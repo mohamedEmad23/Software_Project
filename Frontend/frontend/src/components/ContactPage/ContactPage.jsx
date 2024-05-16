@@ -10,7 +10,7 @@ ContactForm.propTypes = {handleSubmit: PropTypes.func};
 
 function Contact(){
     return( <body>
-        <div className="container2">
+        <div className="container3">
             <h1>Contact us:</h1>
             <p>Contact us with the following methods</p>
             <p>Email: info@porschedrive.us.</p>
