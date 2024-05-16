@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'porsche_font';
+    src: url('911porschav3.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'porsche_font2';
+    src: url('PorscheNext-Regular.otf') format('truetype');
+}
+
+body {
+    font-family: 'porsche_font', fallback-fonts;
+}
+
+p {
+    font-family: 'porsche_font2', fallback-fonts;
+    font-size: 20px;
+}
+
+/* Rest of the CSS code */
