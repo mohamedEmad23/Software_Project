@@ -13,6 +13,12 @@ import store from "./redux/store";
 import axios from "axios";
 import {useDispatch} from "react-redux";
 import {setRole} from "./redux/userSlice";
+import MainOrdersPage from "./components/OrderPage/MainOrdersPage";
+import CreateOrder from "./components/OrderPage/CreateOrder";
+import ActiveOrders from "./components/OrderPage/ActiveOrders";
+import CompleteOrders from "./components/OrderPage/CompleteOrders";
+import AllOrders from "./components/OrderPage/AllOrders";
+
 
 function App() {
     const dispatch = useDispatch();
@@ -43,6 +49,11 @@ function App() {
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/login" element={<LoginPage />} />
                     <Route path="/products" element={<ProductPage />} />
+                    <Route path="/main-orders-page" element={<MainOrdersPage />} />
+                    <Route path="/create-order" element={<CreateOrder  />} />
+                    <Route path="/active-orders" element={<ActiveOrders  />} />
+                    <Route path="/complete-orders" element={<CompleteOrders  />} />
+                    <Route path="/all-orders" element={<AllOrders  />} />
                     <Route path="*" element={<Homepage />} />
                 </Routes>
             </Router>

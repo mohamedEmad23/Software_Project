@@ -1,0 +1,42 @@
+/*!* Navbar Styles *!*/
+/*nav {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    width: 200px; !* Adjust width as needed *!*/
+/*    height: 100%;*/
+/*    background-color: #1a1a1a; !* Matte black *!*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-around; !* Evenly space items *!*/
+/*    align-items: center;*/
+/*    padding: 20px 0;*/
+/*}*/
+
+/*nav ul {*/
+/*    list-style-type: none;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    width: 100%;*/
+/*}*/
+
+/*nav li {*/
+/*    margin: 20px 0; !* Adjust spacing as needed *!*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*}*/
+
+/*nav a {*/
+/*    color: #d3d3d3; !* Light grey *!*/
+/*    text-decoration: none;*/
+/*    font-size: 1.2rem;*/
+/*    font-family: 'Orbitron', sans-serif; !* Futuristic font *!*/
+/*    padding: 10px;*/
+/*    display: block;*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+
+/*nav a:hover {*/
+/*    background-color: #2e2e2e; !* Dark grey on hover *!*/
+/*    border-radius: 5px;*/
+/*}*/

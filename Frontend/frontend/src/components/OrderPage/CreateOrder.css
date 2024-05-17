@@ -1,0 +1,102 @@
+/*!* CreateOrder.css *!*/
+
+/*!* Set background color to black *!*/
+/*.create-order-container {*/
+/*    display: flex;*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*}*/
+
+/*!* Style for the content area *!*/
+/*.create-order-content {*/
+/*    flex: 1;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*!* Style for the order details *!*/
+/*.order-details {*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*!* Style for headings in the order details *!*/
+/*.order-details h3 {*/
+/*    color: #ff0000;*/
+/*}*/
+
+/*!* Style for the product list *!*/
+/*.order-details ul {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
+
+/*!* Style for each product in the list *!*/
+/*.order-details li {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*!* Style for buttons *!*/
+/*.create-order-button,*/
+/*.place-order-button,*/
+/*.delete-order-button,*/
+/*.add-product-button {*/
+/*    background-color: #333;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 10px 20px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 4px;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*!* Style for the plus button *!*/
+/*.add-product-button {*/
+/*    background-color: grey;*/
+/*    font-size: 18px;*/
+/*    padding: 8px 12px;*/
+/*    margin: 0;*/
+/*}*/
+
+/*!* Style for the place order button *!*/
+/*.place-order-button {*/
+/*    background-color: #00ff00; !* Green *!*/
+/*}*/
+
+/*!* Style for the delete order button *!*/
+/*.delete-order-button {*/
+/*    background-color: #ff0000; !* Red *!*/
+/*}*/
+
+/*!* Style for the available products *!*/
+/*.available-products {*/
+/*    flex: 1;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*!* Style for the available products list *!*/
+/*.available-products ul {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
+
+/*!* Style for each product in the available products list *!*/
+/*.available-products li {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*!* Style for the available product button *!*/
+/*.add-product-button {*/
+/*    background-color: grey;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 8px 12px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 4px;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*!* Style for the plus icon *!*/
+/*.add-product-button:before {*/
+/*    content: '+';*/
+/*    font-size: 18px;*/
+/*    margin-right: 5px;*/
+/*}*/

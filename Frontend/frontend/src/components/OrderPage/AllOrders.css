@@ -1,0 +1,27 @@
+/*!* AllOrders.css *!*/
+
+/*!* Set background color to black *!*/
+/*body {*/
+/*    background-color: black;*/
+/*}*/
+
+/*!* Style for the container of all orders *!*/
+/*.all-orders-container {*/
+/*    padding: 20px;*/
+/*    color: white; !* Set text color to white *!*/
+/*}*/
+
+/*!* Style for each individual order block *!*/
+/*.order-block {*/
+/*    background-color: #333; !* Dark grey background color *!*/
+/*    padding: 20px;*/
+/*    margin-bottom: 20px;*/
+/*    border-radius: 8px;*/
+/*}*/
+
+/*!* Style for headings in order blocks *!*/
+/*.order-block p {*/
+/*    margin: 0;*/
+/*    font-size: 16px;*/
+/*    line-height: 1.5;*/
+/*}*/

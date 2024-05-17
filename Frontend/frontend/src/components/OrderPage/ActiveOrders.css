@@ -1,0 +1,48 @@
+/*!* ActiveOrders.css *!*/
+
+/*!* Set background color to black *!*/
+/*body {*/
+/*    background-color: black;*/
+/*}*/
+
+/*!* Style for the container of active orders *!*/
+/*.active-orders-container {*/
+/*    padding: 20px;*/
+/*    color: white; !* Set text color to white *!*/
+/*}*/
+
+/*!* Style for each individual order block *!*/
+/*.order-block {*/
+/*    background-color: #333; !* Dark grey background color *!*/
+/*    padding: 20px;*/
+/*    margin-bottom: 20px;*/
+/*    border-radius: 8px;*/
+/*}*/
+
+/*!* Style for headings in order blocks *!*/
+/*.order-block p {*/
+/*    margin: 0;*/
+/*    font-size: 16px;*/
+/*    line-height: 1.5;*/
+/*}*/
+
+/*!* Style for buttons within the order blocks *!*/
+/*.order-block button {*/
+/*    padding: 8px 16px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 4px;*/
+/*    margin-top: 8px;*/
+/*}*/
+
+/*!* Style for the place order button *!*/
+/*.order-block .place-order-button {*/
+/*    background-color: #00ff00; !* Green button background color *!*/
+/*    color: black; !* Black text color *!*/
+/*    margin-right: 10px; !* Add margin to the right for spacing *!*/
+/*}*/
+
+/*!* Style for the delete order button *!*/
+/*.order-block .delete-order-button {*/
+/*    background-color: #ff0000; !* Red button background color *!*/
+/*    color: black; !* Black text color *!*/
+/*}*/
