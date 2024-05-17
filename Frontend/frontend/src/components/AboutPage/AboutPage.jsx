@@ -1,37 +1,31 @@
-// import React from 'react';
-// import './AboutPage.css';
-// import img1 from './Images/p3.png';
-// import img2 from './Images/c1.jpg';
-// import img3 from './Images/c2.jpg';
-// import img4 from './Images/c3.jpeg';
-//
-// const AboutPage = () => {
-//     return (
-//         <div>
-//             <nav className="navbar bg-body-tertiary text-center">
-//                 {/* Rest of the navbar code */}
-//             </nav>
-//             <div className="container-fluid">
-//                 <h1 className="p-5 align-items-center justify-content-center d-flex" style={{textDecoration: "underline"}}>About Porsche:</h1>
-//             </div>
-//             <div className="container-fluid p-2">
-//                 {/* Rest of the carousel code */}
-//                 <div className="carousel-item active">
-//                     <div className="container">
-//                         <div className="row">
-//                             <div className="col">
-//                                 <p>{/* Text content */}</p>
-//                             </div>
-//                             <div className="col">
-//                                 <img src={img2} className="d-block w-100" alt="..."/>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//                 {/* Rest of the carousel items */}
-//             </div>
-//         </div>
-//     );
-// };
-//
-// export default AboutPage;
+import React from 'react';
+import './AboutPage.css';
+import img1 from '../../Images/c1.jpg';
+
+const AboutPage = () => {
+    return (
+        <div className="about-page-specific">
+            <div className="text-center">
+                <h1 className="title-specific">About Porsche:</h1>
+            </div>
+
+            <div className="p-2">
+                <div className="row">
+                    <div className="col-md-6">
+                        <p className="about-text">The origin story of Porsche, the iconic car manufacturer, dates back to 1948 when Ferdinand Porsche unveiled
+                            the first-ever Porsche vehicle, the Porsche 356. However, the roots of the company stretch further back to the
+                            early 20th century when Ferdinand Porsche, an Austrian automotive engineer, founded his own engineering consultancy.
+                            His expertise in automotive design and engineering led to significant contributions to the development of various high-performance vehicles, including the Volkswagen Beetle.
+                            After World War II, Ferdinand's son, Ferry Porsche, spearheaded the creation of the Porsche 356, which embodied the family's vision of combining performance, elegance, and precision engineering.
+                            With its distinctive design and exceptional driving dynamics, the Porsche 356 laid the foundation for Porsche's enduring legacy as a premier sports car manufacturer.</p>
+                    </div>
+                    <div className="col-md-6">
+                        <img src={img1} className="about-image d-block w-100" alt="Porsche 356" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default AboutPage;
