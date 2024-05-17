@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 
 require('dotenv').config();
 const bcrypt = require('bcryptjs');
+const productModel = require("../models/productModel");
 
 
 module.exports.register = async (req, res) => {
@@ -22,6 +23,29 @@ module.exports.register = async (req, res) => {
         return res.status(500).json({message: err.message});
     }
 };
+
+
+module.exports.getAllProducts = async (req, res) => {
+    try{
+        const products = await productModel.find();
+        return res.status(200).json(products);
+    }catch (err){
+        return res.status(500).json({message: err.message});
+    }
+};
+
+//New function to get user role
+module.exports.getUserRole = async (req, res) => {
+    const { id } = req.params;
+    try {
+        const user = await userModel.findById(id);
+        return res.status(200).json({role: user.role});
+    } catch (err) {
+        return res.status(500).json({message: err.message});
+    }
+}
+
+
 
 module.exports.login=async (req,res)=> {
     const {email, password} = req.body;
@@ -58,9 +82,10 @@ module.exports.login=async (req,res)=> {
                 expires: expiresAt,
                 withCredentials: true,
                 httpOnly: false,
-                SameSite:'none'})
+                SameSite:'none',
+                secure: true})
             .status(200)
-            .json({ message: "login successfully", user });
+            .json({ message: "login successfully", user,token, userId: user._id});
     }
     catch (err) {
         return res.status(500).json({mssg: err.message});

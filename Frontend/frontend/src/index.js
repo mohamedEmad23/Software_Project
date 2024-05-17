@@ -1,14 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import axios from "axios";
+import { createRoot } from 'react-dom/client';
+import {Provider} from "react-redux";
+import store from "./redux/store";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+// Set withCredentials to true for all axios requests
+axios.defaults.withCredentials = true;
+
+const root = document.getElementById('root');
+createRoot(root).render(
+    <React.StrictMode>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

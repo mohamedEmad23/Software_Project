@@ -16,14 +16,14 @@ module.exports.addNewProduct = async (req, res) => {
     }
 }
 
-module.exports.getAllProducts = async (req, res) => {
-    try{
-        const products = await productModel.find();
-        return res.status(200).json(products);
-    }catch (err){
-        return res.status(500).json({message: err.message});
-    }
-}
+// module.exports.getAllProducts = async (req, res) => {
+//     try{
+//         const products = await productModel.find();
+//         return res.status(200).json(products);
+//     }catch (err){
+//         return res.status(500).json({message: err.message});
+//     }
+// }
 
 module.exports.deleteProduct = async (req, res) => {
     const { id } = req.params;

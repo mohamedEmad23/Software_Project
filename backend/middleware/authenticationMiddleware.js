@@ -4,6 +4,7 @@ const userModel = require('../models/userModel.js');
 module.exports = async function authenticationMiddleware(req, res, next) {
     // Get the authorization header
     const authHeader = req.headers['authorization'];
+    console.log('Authorization Header:', authHeader);
 
     // Check if the authorization header is provided
     if (!authHeader) {

@@ -9,5 +9,8 @@ const router = Router();
 router.post('/register', userControllers.register);
 // login
 router.post('/login', userControllers.login);
-
+//Get All Products
+router.get('/products', userControllers.getAllProducts);
+//Get User Role
+router.get('/role/:id', authenticationMiddleware,userControllers.getUserRole);
 module.exports = router;

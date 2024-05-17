@@ -1,58 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7; /* Light gray background */
-    color: #333; /* Dark gray text color */
-    margin: 0;
-    padding: 0;
+    background-image: url('../../Images/p3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.container3 {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff; /* White background */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+.container2{
+    font-family: PorscheFont4, serif;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    justify-content: normal;
+    height: 100vh;
+    color: white;
+    background-color: #282c34;
+    background-image: url('../../Images/c3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
-h1 {
-    color: #d50000; /* Porsche Red */
-    margin-bottom: 20px;
+.contactus{
+    font-family: 'PorscheFont3', serif;
 }
 
-form {
-    display: grid;
-    grid-gap: 20px;
+@font-face {
+    font-family: 'PorscheFont3';
+    src: url('../../fonts/911porschav3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-label {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-textarea {
-    resize: vertical; /* Allow vertical resizing of textarea */
-}
-
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #d50000; /* Porsche Red */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button[type="submit"]:hover {
-    background-color: #b71c1c; /* Darker shade of Porsche Red */
+@font-face {
+    font-family: 'PorscheFont4';
+    src: url('../../fonts/PorscheNext-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

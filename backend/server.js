@@ -44,6 +44,12 @@ app.use("/api/v1", orderRoute);
  // });
 
 
+//New Code
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Credentials', 'true');
+    next();
+});
+
   app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
   });

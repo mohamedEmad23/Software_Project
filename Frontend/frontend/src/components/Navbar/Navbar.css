@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'PorscheFont2';
+    src: url('../../fonts/911porschav3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.brand-text {
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.title2 {
+    font-family: 'PorscheFont', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+}
+
+.logo img {
+    width: auto; /* Allow the image to adjust its width */
+    height: 100px; /* Maintain aspect ratio */
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -400px; /* Adjust this value to the desired width of the menu */
+    width: 400px; /* Adjust this value to the desired width of the menu */
+    height: 100%;
+    background-color: #333;
+    padding-top: 50px; /* Adjust this value based on your navbar height */
+    transition: left 0.3s ease;
+}
+
+.menu.open {
+    left: 0;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.close-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu-list {
+    padding: 0;
+    text-align: center; /* Align menu items to center */
+    font-family: 'PorscheFont2', serif;
+    font-size: x-large;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+    display: block; /* Ensure each menu item takes the full width */
+    padding-bottom: 10px;
+}
+
+.menu-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-icon a {
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    padding: 10px;
+    top: 35px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+}

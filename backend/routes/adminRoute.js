@@ -9,7 +9,7 @@ const authenticationMiddleware = require("../middleware/authenticationMiddleware
 router.post('/addProduct',authorizationMiddleware([2]),adminControllers.addNewProduct);
 
 // get all products
-router.get('/products',authorizationMiddleware([2]),adminControllers.getAllProducts);
+//router.get('/products',authorizationMiddleware([2]),adminControllers.getAllProducts);
 
 // delete product
 router.delete('/deleteProduct/:id',authorizationMiddleware([2]),adminControllers.deleteProduct);
