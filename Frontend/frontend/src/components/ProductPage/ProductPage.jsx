@@ -30,8 +30,13 @@ const ProductPage = () => {
 
     const deleteProduct = async (id) => {
         try {
+            const token = localStorage.getItem('token'); // Get the token from local storage
             const url = `${process.env.REACT_APP_API_URL}/products/${id}`;
-            await axios.delete(url);
+            await axios.delete(url, {
+                headers: {
+                    'Authorization': `Bearer ${token}` // Include the token in the 'Authorization' header
+                }
+            });
             getAllProducts();
         } catch (error) {
             console.error('Error deleting product:', error);
@@ -54,18 +59,19 @@ const ProductPage = () => {
 
     return (
         <div>
-            {userRole === '2' && <button onClick={addNewProduct}>Add New Product</button>}
+            {userRole == 2 && <button onClick={addNewProduct}>Add New Product</button>}
             {products.map(product => (
                 <div key={product._id}>
                     <h2>{product.name}</h2>
                     <p>{product.description}</p>
-                    {userRole === '2' && <button onClick={() => deleteProduct(product._id)}>Delete Product</button>}
-                    {userRole === '2' && <button onClick={() => updateProduct(product._id)}>Update Product</button>}
+                    {userRole == 2 && <button onClick={() => deleteProduct(product._id)}>Delete Product</button>}
+                    {userRole == 2 && <button onClick={() => updateProduct(product._id)}>Update Product</button>}
                 </div>
             ))}
             <button onClick={getAllProducts}>Get All Products</button>
         </div>
     );
 };
+
 
 export default ProductPage;

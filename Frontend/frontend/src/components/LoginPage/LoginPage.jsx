@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './LoginPage.css';
 import { useDispatch } from "react-redux";
 import { setRole } from "../../redux/userSlice";
+import Cookies from 'js-cookie';
 
 const LoginPage = () => {
     const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const LoginPage = () => {
             console.log('Response from server:', res); // Log the response from the server
             if (res.status === 200) {
                 if (typeof window !== 'undefined') {
+                    Cookies.set('token', res.data.token);
                     localStorage.setItem('token', res.data.token);
                 }
                 console.log('Response from server:', res); // Log the response from the server
@@ -33,7 +35,7 @@ const LoginPage = () => {
                     }
                 });
                 console.log('Role response from server:', roleRes); // Log the role response from the server
-
+                localStorage.setItem('role', roleRes.data.role); // Store the role in local storage
                 dispatch(setRole(roleRes.data.role));
                 setMessage('User Logged in successfully');
                 setIsSuccess(true);
