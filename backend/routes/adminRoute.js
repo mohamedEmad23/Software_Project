@@ -8,8 +8,8 @@ const authenticationMiddleware = require("../middleware/authenticationMiddleware
 // add new product
 router.post('/addProduct',authorizationMiddleware([2]),adminControllers.addNewProduct);
 
-// get all products
-//router.get('/products',authorizationMiddleware([2]),adminControllers.getAllProducts);
+// get all products --> went to user route
+//router.get('/products',adminControllers.getAllProducts);
 
 // delete product
 router.delete('/deleteProduct/:id',authorizationMiddleware([2]),adminControllers.deleteProduct);
